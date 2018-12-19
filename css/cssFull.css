@@ -1,0 +1,322 @@
+main,
+header,
+nav,
+aside,
+main section,
+footer,
+nav div{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column: 1/13;
+}
+
+main section div,
+main section h2,
+footer div,
+main section form
+{
+    grid-column: 1/13;
+}
+
+body{
+    background-color: rgb(224, 219, 219);
+}
+header{
+    background-color: coral;
+}
+
+main{
+    min-width: 100vh;
+    
+}
+
+.main{
+    background-color: rgb(224, 219, 219);
+    grid-column: 4/13;
+}
+
+aside{
+    background-color: yellow;
+    min-width: 100vh;
+    grid-column: 1/4;
+}
+
+.footer{
+    width: 100%;
+  height: 60px;
+  background-color: #174873;
+  color: white;
+  grid-column: 1 / 13;
+  column-count: 5;
+}
+
+.contenedorFlexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > img{
+    object-fit: fill;
+    width:100%;
+    height: 400px; 
+}
+
+.filterForm{
+    margin: 5px 0 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#buscador{
+    border: solid black 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#buscador:focus{
+    background-color: rgb(162, 238, 213);
+}
+
+#buscador:disabled{
+    background-color: rgb(119, 111, 111);
+}
+
+#botonBuscar{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-image: -webkit-linear-gradient(to bottom, #d84c4c, #c35bec);
+    background-image: -moz-linear-gradient(to bottom, #d84c4c, #c35bec);
+    background-image: -ms-linear-gradient(to bottom, #d84c4c, #c35bec);
+    background-image: -o-linear-gradient(to bottom, #d84c4c, #c35bec);
+    background-image: linear-gradient(to bottom, #d84c4c, #c35bec);
+}
+
+.formularios{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form{
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.izq,.der{
+    float: left;
+    margin-right: 20px;
+}
+
+input[name="nombre"]{
+    border: dotted blue 1px;
+}
+
+input[name="email"]{
+    border: dashed green 1px;
+}
+
+input[name="password"]{
+    border: double red 1px;
+}
+
+input[name="number"]{
+    border: groove orangered 1px;
+}
+
+input[name="color"]{
+    border: inset olive 1px;
+}
+
+input[name="date"]{ 
+    border: none;
+}
+
+.app{
+    width:31%;
+    margin:1%;
+    overflow: hidden;
+    background-color: rgb(223, 195, 160);
+    border: solid rgb(128, 123, 123) 1px;
+    column-count: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+    box-shadow: 10px 10px 15px rgb(128, 123, 123);
+    animation-name: agrandarApp;
+    animation-duration: 5s;
+    cursor: url("./images/unicorn.cur"),default;
+}
+
+
+.app:hover{
+    animation-name: movimientoApp;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+
+.app img{
+    object-fit: fill;
+    width:50%;
+    margin-top: 5px;
+    height: 100px;
+}
+
+
+.titulo {
+	font:  4vh pixel, Sans-Serif;
+    color: rgba(0,0,255,0.5);
+    text-align: center;
+}
+
+.titulo:after {
+	content: "Productos";
+    position: absolute;  
+    top: 5px;
+    color: rgba(255,0,0,0.5);
+    z-index:-1;
+    left: 0;
+    right: 0;
+    margin-left: 3px;
+}
+
+@keyframes agrandarApp{
+    0%{transform: scale(.2)}
+    100%{transform: scale(1)}
+}
+
+@keyframes movimientoApp{
+    0%{transform: translateY(-20px);}
+    50%{transform: translateY(40px);}
+    100%{transform: translateY(-20px);}
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'pixel','segoe ui';
+  }
+  .nav {
+    height: 80px;
+    width: 100%;
+    background-color: #174873;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+    grid-column: 1/3;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+    grid-column: 1/13;
+  }
+  
+  .nav > .nav-links {
+    grid-column: 1/13;
+    display: flex;
+    font-size: 18px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* align-items: stretch; */
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: black; }
+  
+  a:visited {
+    color: rgb(248, 248, 116); 
+  }
+  
+  a:hover {
+    color: rgb(255, 82, 82); 
+  }
+
+  
+  @media (max-width:550px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color:#174873;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      /* overflow-y: hidden; */
+      flex-wrap: wrap;
+      top: 50px;
+      left: 50%;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links {
+      height: calc(50vh);
+      overflow-y: auto;
+    }
+  }
+
+  @font-face {
+    font-family: pixel;
+    src: url(../fuentes/pixel.ttf);
+    font-size: 2em;
+    font-weight: bold; }

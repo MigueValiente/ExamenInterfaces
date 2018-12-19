@@ -1,0 +1,59 @@
+.app{
+    width:31%;
+    margin:1%;
+    overflow: hidden;
+    background-color: rgb(223, 195, 160);
+    border: solid rgb(128, 123, 123) 1px;
+    column-count: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+    box-shadow: 10px 10px 15px rgb(128, 123, 123);
+    animation-name: agrandarApp;
+    animation-duration: 5s;
+    cursor: url("./images/unicorn.cur"),default;
+}
+
+
+.app:hover{
+    animation-name: movimientoApp;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+
+.app img{
+    object-fit: fill;
+    width:50%;
+    margin-top: 5px;
+    height: 100px;
+}
+
+
+.titulo {
+	font:  4vh pixel, Sans-Serif;
+    color: rgba(0,0,255,0.5);
+    text-align: center;
+}
+
+.titulo:after {
+	content: "Productos";
+    position: absolute;  
+    top: 5px;
+    color: rgba(255,0,0,0.5);
+    z-index:-1;
+    left: 0;
+    right: 0;
+    margin-left: 3px;
+}
+
+@keyframes agrandarApp{
+    0%{transform: scale(.2)}
+    100%{transform: scale(1)}
+}
+
+@keyframes movimientoApp{
+    0%{transform: translateY(-20px);}
+    50%{transform: translateY(40px);}
+    100%{transform: translateY(-20px);}
+}

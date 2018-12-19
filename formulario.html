@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav-header">
+                    <div class="nav-title">
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <div class="nav-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="formulario.html">Formularios</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Cuenta</a>
+                    <a href="#">Acerca De</a>
+                </div>
+            </div> 
+        </nav>
+    </header>
+
+    <div class="formularios">
+        <fieldset>
+            <legend>Formulario 1</legend>
+            <form action="formulario.html" class="form" method="POST">
+                <div class="izq">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" autocomplete="off" autofocus>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="on">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                </div>
+                <div class="der">
+                    <label for="color">Color Favorito</label>
+                    <input type="color" name="color" id="color">
+                    <label for="number">Numero Favorito</label>
+                    <input type="number" name="number" id="number">
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

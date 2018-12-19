@@ -1,0 +1,19 @@
+* Incluir un reseteo de estilo en la página (0.25 puntos)(Hecho)
+* Incluir el viewport de la web de gmail, la codificación UTF8. (0.25 puntos)
+* Debe esta bien definida la cabecera, el contenido principal con una imagen grande que ocupe  gran parte de la página al principio y después las aplicaciones webs que se presentan, el pie, y el menu lateral izquierdo con los filtros que se pueden aplicar. Todo el contenido principal debe estar bien creado semánticamente en el HTML y ubicado con un grid de 12 columnas.(1 punto).
+* Crear un menu con 5 enlaces, todos los enlaces deben estar en línea, y separados entre ellos y no deben tener estilo por defecto. Después debe aplicar un estilo diferente para cada estado diferente de un link. (0.5)
+* Deben mostrarse al menos 10 aplicaciones webs, con una imagen (aunque sea la misma), un nombre del proyecto, y descripción. Los elementos siempre en filas de 3 elementos usando flexbox. Cada elemento debe tener sombra. Deben tener margin, padding y bordes. Y el tamaño del div debe contener el padding y el borde.(1 punto)
+* Las aplicaciones webs deben mostrarse nada más entrar en la aplicación desde un tamaño pequeño a un tamaño más grande y  cada vez que nos ubiquemos encima de una aplicación web con el ratón, esta deberá moverse hacia arriba y hacia abajo tres veces.(1 punto)
+* Crear el formulario de filtrado con un input de tipo texto y un botón. El input debe aplicarse un estilo personalizado, con un borde redondo y que difiera su estilo si tiene el foco o no. El estilo del botón debe ser con gradiente, aplicando los prefijos correspondiente.(1 punto)
+* Crear una media query que todos los enlaces del menu queden en una columna y además ubique el menu lateral de búsqueda justamente después del menu de navegación y después el listado de las aplicaciones Webs. Además de cambiar el tamaño del texto a uno más pequeño (1 punto)
+* Crear un formulario Web, con 6 tipos distintos de inputs con diferentes bordes, que esten ubicados en 2 columnas de tres inputs cada uno y que cuando se le aplique una media query, pasen a estar todos en una columna, pero que cada input de la derecha, este justamente debajo del de la izquierda. Usar en el formulario las propiedades de autofocus y autocomplete.(1 punto).
+* Crear un texto en el pie de página dividido en 5 columnas.(0.25 puntos).
+* Usar 6 selectores normales de css diferentes (0.25 puntos).
+* Crear un estilo diferente para el mismo elemento aplicando los selectores de pseudo Elementos (0.25 puntos)
+* Cambiar la posicion de un elemento 4 veces con la propiedad css correspondiente, en base a cuatro media query distinta.(0.25 puntos)
+* Usar 6 selectores de pesudo clases diferentes (0.25 puntos).
+* Usar la propiedad translate donde corresponda (0.25 puntos).
+* Usar unos iconos en la aplicación,a partir de sprites. (0.25 puntos).
+* Crear tu propia fuente y usalar en la aplicación (0.25 puntos)
+* Si la página pasa correctamente el validado de HTML y CSS (0.5 puntos)
+* Si la página pasa correctametne el validador de WAI (0.5 puntos)
